@@ -1,7 +1,6 @@
 module MIT18065
 
-using Plots, Images, Colors, Interpolations
-using WAV
+using Images, Colors, Interpolations
 using Polynomials
 using PyCall
 using Interpolations
@@ -10,10 +9,11 @@ using JSON
 using IterativeSolvers
 
 
-import FileIO
-import FileIO: @format_str, File, filename
+using FileIO: @format_str, File, filename, add_format
 
 # reexport plotting
+import RecipesBase
+using Plots: plot, scatter, plot!, scatter!, heatmap, heatmap!, @recipe, plotlyjs
 export plot, scatter, plot!, scatter!, heatmap, heatmap!
 
 # reexport Colors
@@ -50,6 +50,14 @@ export tsvd
     real.(c), imag.(c)
 end
 
+function spy(A::Matrix;
+        xaxis = 1:size(A, 2), yaxis = 1:size(A, 1),
+        kw_args...
+    )
+    heatmap(flipdim(A, 1), xaxis = xaxis, yaxis = yaxis; kw_args...)
+end
+export spy
+
 # register mat format with FileIO
 load(f::File{format"MAT"}) = matread(filename(f))
 
@@ -57,14 +65,17 @@ load(f::File{format"MAT"}) = matread(filename(f))
 Get the demo path
 """
 demopath(files...) = normpath(joinpath(dirname(@__FILE__), "..", "demos", files...))
+
+
+
 export demopath
 
 function __init__()
     # make sure Plotly is selected as plotting backend
-    plotly()
+    plotlyjs()
     # register mat format with FileIO
     # TODO move into FileIO registry
-    FileIO.add_format(format"MAT", "MATLAB", ".mat", [:MIT18065])
+    add_format(format"MAT", "MATLAB", ".mat", [:MIT18065])
     eval(Main, :(using FileIO))
 end
 
