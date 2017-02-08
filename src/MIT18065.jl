@@ -1,6 +1,6 @@
 module MIT18065
 
-using Plots, MAT, Images, Colors, Interpolations
+using Plots, Images, Colors, Interpolations
 using WAV
 using Polynomials
 using PyCall
@@ -45,7 +45,7 @@ end
 export tsvd
 
 # define some plotting recipes to make it easier for the students
-# to just use simple plotting commands
+# to just use simple plotting commands. Function name doesn't matter
 @recipe function f{C <: Complex}(c::Vector{C})
     real.(c), imag.(c)
 end
