@@ -1,1 +1,20 @@
 julia 0.5
+Plots
+Plotly
+FileIO
+IJulia
+Conda
+MAT
+Images
+Colors
+WAV
+Polynomials
+PyCall
+Interpolations
+Convex
+JSON
+IterativeSolvers
+SCS
+@osx QuartzImageIO
+@linux ImageMagick
+@windows ImageMagick
