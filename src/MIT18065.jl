@@ -23,6 +23,26 @@ export RGBA, RGB
 export interpolate, BSpline, Linear, OnGrid
 
 
+function tsvd(A, k = min(min(size(A)...), 6))
+    m, n = size(A)
+    minmn = min(m, n)
+
+    if k == minmn               # All values               : QR algorithm (density if necessary)
+        return svd(full(A))
+    elseif k > 0
+        if k > sqrt(minmn) + 1  # More than sqrt(n) values : QR algorithm (density if necessary)
+            U, s, V = svd(full(A))
+            return U[:,1:k], s[1:k], V[:,1:k]
+        else                    # less than sqrt(n) values : Lanczos algorithm
+            out = svds(A, nsv = k)
+            return out[1][:U], out[1][:S], VERSION < v"0.6.0-dev.2026" ? out[1][:V]' : out[1][:V]
+        end
+    else
+        return Array{eltype(A)}(m, 0), Array{eltype(A)}(0), Array{eltype(A)}(n, 0)
+    end
+end
+export tsvd
+
 # define some plotting recipes to make it easier for the students
 # to just use simple plotting commands
 @recipe function f{C <: Complex}(c::Vector{C})
