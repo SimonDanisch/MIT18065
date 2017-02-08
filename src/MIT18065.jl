@@ -41,6 +41,7 @@ function tsvd(A, k = min(min(size(A)...), 6))
         return Array{eltype(A)}(m, 0), Array{eltype(A)}(0), Array{eltype(A)}(n, 0)
     end
 end
+
 export tsvd
 
 # define some plotting recipes to make it easier for the students
