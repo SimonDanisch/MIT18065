@@ -7,7 +7,7 @@
 
 
 ## Install vanilla Julia  
-(For screen shots, some folks like the "First Steps" section of the [QuantEcon class page.]( https://lectures.quantecon.org/jl/getting_started.html#first-steps )
+(For screen shots, some folks like the "First Steps" section of the [QuantEcon class page.]( https://lectures.quantecon.org/jl/getting_started.html#first-steps ) )
 
 1. install Julia 0.5 (command line version) as described in http://julialang.org/downloads/
   * Pick one entry from the table (.exe for windows, .dmg for mac, binaries for linux) and download
@@ -26,9 +26,8 @@
   * This took about 30 minutes on windows, and about 7 on my mac
   * For windows users, good time to get dinner. (Your time may vary.)
 2. run Pkg.test("MIT18065")
-
-it will open a web browser where you can select getting started.ipynb which will lead you to this:
+  * it will open a web browser where you can select getting started.ipynb which will lead you to this:
 [notebook](https://github.com/SimonDanisch/MIT18065/blob/master/docs/getting%20started.ipynb)
+2. execute every step in the notebook (shift + enter  one by one, or cell + Run All)
 
-
-1. execute every step in the notebook (shift + enter  one by one, or cell + Run All)
+## HW Notes
