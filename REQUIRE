@@ -1,19 +1,33 @@
 julia 0.5
+
+# Basics
 Plots
 PlotlyJS
+PyCall
 FileIO
 IJulia
 Conda
-MAT
 Images
-Colors
-WAV
-Polynomials
-PyCall
-Interpolations
-Convex
-JSON
-IterativeSolvers
-SCS
-GLVisualize
 ImageMagick
+Colors
+
+# some guis, e.g. photostitching
+GLVisualize
+
+
+# Photostitching
+Interpolations
+
+# audio unmixing
+WAV
+
+# L1 minimization
+Convex
+SCS
+Polynomials
+
+# google maps api
+JSON
+
+# Photometric stereo
+IterativeSolvers
