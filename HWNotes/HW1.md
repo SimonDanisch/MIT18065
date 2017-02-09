@@ -10,6 +10,6 @@
   * randn(m,n) is a random m x n matrix of standard normals
   * randn(n) is a random n vector of standard normals (this is a one dimensional structure)
   * length(A) is the number of elements in A
-  * [ i+j  for i=1:5,j=1:5]  Creates a 5x5 matrix.  This construction is called a "comprehension".
-  
+  * `[ i+j  for i=1:5,j=1:5]`  Creates a 5x5 matrix.  This construction is called a "comprehension".
+  * `1:5` is called a range.  It may or may not behave like the vector `[1,2,3,4,5]`, but `[1:5;]` is the vector.
   
