@@ -9,7 +9,7 @@ using JSON
 using IterativeSolvers
 
 
-using FileIO: @format_str, File, filename, add_format
+using FileIO: @format_str, File, filename, add_format, stream
 
 # reexport plotting
 import RecipesBase
@@ -56,17 +56,32 @@ function spy(A::Matrix;
     )
     heatmap(flipdim(A, 1), xaxis = xaxis, yaxis = yaxis; kw_args...)
 end
+
 export spy
 
 # register mat format with FileIO
 load(f::File{format"MAT"}) = matread(filename(f))
+
+# for now, we use serialize
+load(f::File{format"JULIA"}) = open(f) do io
+    deserialize(stream(io))
+end
+
+save(f::File{format"JULIA"}, x) = open(f, "w") do io
+    serialize(stream(io), x)
+end
+
 
 """
 Get the demo path
 """
 demopath(files...) = normpath(joinpath(dirname(@__FILE__), "..", "demos", files...))
 
-
+function update()
+    with(Base.LibGit2.GitRepo, joinpath(dirname(@__FILE__), "..")) do repo
+        
+    end
+end
 
 export demopath
 
@@ -76,6 +91,7 @@ function __init__()
     # register mat format with FileIO
     # TODO move into FileIO registry
     add_format(format"MAT", "MATLAB", ".mat", [:MIT18065])
+    add_format(format"JULIA", (), ".jls", [:MIT18065])
     eval(Main, :(using FileIO))
 end
 
