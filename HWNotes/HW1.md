@@ -16,12 +16,25 @@
   * One could have also typed the longer form `[i for i=1:5]`.
   * A function that computes M*x+b:
   ```
-  function myfunction(x,M,B)
+  function myfunction(x,M,b)
       M*x+b
   end
   ```
   * A short form for that same function:
   `myfunction2(x,M,B) = M*x+b`
+  * A longer form for that same function:
+  ```
+  function myfunction3(x,M,b)
+     n = length(x) # assume x and b are length n, and M is nxn
+     z = copy(b)   # make a copy of b
+     for i=1:n, j=1:n
+       z[i] += M[i,j]*x[j]
+     end
+     z
+  end
+  ```
+     
+    
       
   * Julia cheatsheets:
      * https://math.mit.edu/~stevenj/Julia-cheatsheet.pdf  (assumes PyPlot installed)
