@@ -21,4 +21,4 @@ if is_linux()
     end
 end
 
-notebook(detach = true, dir = joinpath(dirname(@__FILE__), "..", "docs"))
+notebook(detached = true, dir = joinpath(dirname(@__FILE__), "..", "docs"))
