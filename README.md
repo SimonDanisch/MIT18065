@@ -32,3 +32,4 @@ Note: Installing class packages  is not required for HW1, but if there are probl
 2. execute every step in the notebook (shift + enter  one by one, or cell + Run All)
 
 ## HW Notes
+[HW1 Notes](https://github.com/SimonDanisch/MIT18065/blob/master/HWNotes/HW1)
