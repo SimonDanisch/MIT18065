@@ -4,7 +4,7 @@
 
 ## Installation.
 * Summary:  we will download Julia, start it in a terminal, download a ton of software, and then open up a Jupyter Notebook
-(A better installation, especially for windows will be available Monday)
+
 
 ## Install vanilla Julia
 1. install Julia 0.5 (command line version) as described in http://julialang.org/downloads/
