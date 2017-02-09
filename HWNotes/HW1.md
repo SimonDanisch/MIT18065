@@ -8,5 +8,7 @@
   * Type 1+1 <shift+enter> and away you go.
 2. Some useful Julia ideas:
   * randn(m,n) is a random m x n matrix of standard normals
-  * randn(n) is a random n vector of standard normals
+  * randn(n) is a random n vector of standard normals (this is a one dimensional structure)
+  * length(A) is the number of elements in A
+  
   
