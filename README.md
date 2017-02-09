@@ -16,6 +16,7 @@
 
 ## Install class packages for MIT 18.065
 
+2. If you're on linux, you need to install these packages first `sudo apt-get install cmake xorg-dev libglu1-mesa-dev hdf5-tools`
 2. Type Pkg.init()
   * Ignore pink ugly info or warning messages. They are not serious. 
   * We found that on a mac it ran right away, but on windows it took a couple of minutes. Good time to get that coffee or Diet Coke.
