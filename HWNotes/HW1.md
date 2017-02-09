@@ -1,1 +1,1 @@
-# Hello World
+1. We reccommend use of Jupyter notebooks
