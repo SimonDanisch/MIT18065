@@ -3,3 +3,10 @@
   * If you have jupyter installed, you can open a new notebook by typing in the REPL (the Julia terminal) <br>
      `using IJulia` <br>
      `notebook()`
+1. Opening a notebook
+  * From the dashboard, click NEW in the upper right, and Julia 0.5.0
+  * Type 1+1 <shift+enter> and away you go.
+2. Some useful Julia ideas:
+  * randn(m,n) is a random m x n matrix of standard normals
+  * randn(n) is a random n vector of standard normals
+  
