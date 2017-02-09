@@ -33,7 +33,18 @@
      z
   end
   ```
-     
+  * A basic if statement to pick the larger of x or y:
+  ```
+  if x>y
+     y
+  else
+     x
+  end
+  ```
+  Same thing, in compact ternary format:
+  ```
+  x>y ? x : y
+  ```
     
       
   * Julia cheatsheets:
