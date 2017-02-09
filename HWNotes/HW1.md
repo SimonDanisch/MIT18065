@@ -1,4 +1,5 @@
-1. We reccomend use of Jupyter notebooks
+1. You might try the full install described on [18.065 page](https://github.com/SimonDanisch/MIT18065) or this can be done later.
+1. We recommend use of Jupyter notebooks
   * You can log into [juliabox](http://www.juliabox.org) and avoid installation, but many students like having a local version of Julia.
   * If you have jupyter installed, you can open a new notebook by typing in the REPL (the Julia terminal) <br>
      `using IJulia` <br>
