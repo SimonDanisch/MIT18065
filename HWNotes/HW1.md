@@ -1,3 +1,6 @@
+1. We would have shown this in class on February 9th, but the pretty white snow got in the way.  We can show a bit on Tuesday.
+If you have any problems or even curiosities, please address on piazza. Also on Friday 2/10, the Prof. Johnson tutorial is a good
+chance to hear some introductory words and also troubleshoot your own computer.
 1. You might try the full install described on the [18.065 page](https://github.com/SimonDanisch/MIT18065) or this can be done later.
 1. We recommend use of Jupyter notebooks
   * You can log into [juliabox](http://www.juliabox.org) and avoid installation, but many students like having a local version of Julia.
