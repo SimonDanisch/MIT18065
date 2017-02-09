@@ -7,7 +7,7 @@
 
 
 ## Install vanilla Julia  
-(For screen shots, some folks like the "First Steps" section of https://lectures.quantecon.org/jl/getting_started.html)
+(For screen shots, some folks like the "First Steps" section of the [QuantEcon class page.]( https://lectures.quantecon.org/jl/getting_started.html#first-steps )
 
 1. install Julia 0.5 (command line version) as described in http://julialang.org/downloads/
   * Pick one entry from the table (.exe for windows, .dmg for mac, binaries for linux) and download
