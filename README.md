@@ -17,7 +17,7 @@
 3. Type `1+1` just for fun.  You know what we're hoping to see.
 
 ## Install class packages for MIT 18.065
-Note: This is not required for HW1, but if there are problems, it is best to know early.  The HW1 Julia problem can be executed on [JuliaBox](http://www.juliabox.com) with no installation or on a basic Julia install.  Either way, we recommend jupyter notebooks.
+Note: Installing class packages  is not required for HW1, but if there are problems, it is best to know early.  The HW1 Julia problem can be executed on [JuliaBox](http://www.juliabox.com) with no installation or on a basic Julia install.  Either way, we recommend jupyter notebooks.
 
 2. If you're on linux, you need to install these packages first `sudo apt-get install cmake xorg-dev libglu1-mesa-dev hdf5-tools`
 2. Type Pkg.init()
