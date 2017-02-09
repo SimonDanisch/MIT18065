@@ -14,6 +14,15 @@
   * `A=[ i+j  for i=1:5,j=1:5]`  Creates a 5x5 matrix.  This construction is called a "comprehension".
   * `1:5` is called a range.  It may or may not behave like the vector `[1,2,3,4,5]`, but `[1:5;]` is the vector.
   * One could have also typed the longer form `[i for i=1:5]`.
-  * More coming...
-  
+  * A function that computes M*x+b:
+  ```
+  function myfunction(x,M,B)
+      M*x+b
+  end
+  ```
+      
+  * Julia cheatsheets:
+     * https://math.mit.edu/~stevenj/Julia-cheatsheet.pdf  (assumes PyPlot installed)
+     * https://cheatsheets.quantecon.org/
+ 
   
