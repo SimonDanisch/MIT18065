@@ -78,8 +78,10 @@ Get the demo path
 demopath(files...) = normpath(joinpath(dirname(@__FILE__), "..", "demos", files...))
 
 function update()
-    with(Base.LibGit2.GitRepo, joinpath(dirname(@__FILE__), "..")) do repo
-        
+    path = joinpath(dirname(@__FILE__), "..")
+    Base.LibGit2.with(Base.LibGit2.GitRepo, path) do repo
+        Base.LibGit2.checkout!(repo, "HEAD", force = false)
+        #Pkg.update("MIT18065")
     end
 end
 
