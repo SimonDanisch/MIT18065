@@ -3,7 +3,7 @@
 ## Installation
 * install Julia 0.5 as described in http://julialang.org/downloads/
 * start the Julia REPL in your favorite terminal
-* runt Pkg.init()
+* run Pkg.init()
 * run Pkg.clone("https://github.com/SimonDanisch/MIT18065.git")
 * run Pkg.test("MIT18065")
 
