@@ -20,6 +20,8 @@
       M*x+b
   end
   ```
+  * A short form for that same function:
+  `myfunction2(x,M,B) = M*x+b`
       
   * Julia cheatsheets:
      * https://math.mit.edu/~stevenj/Julia-cheatsheet.pdf  (assumes PyPlot installed)
