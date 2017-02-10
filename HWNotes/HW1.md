@@ -9,7 +9,7 @@ chance to hear some introductory words and also troubleshoot your own computer.
      `notebook()`
 1. Opening a notebook
   * From the dashboard, click NEW in the upper right, and Julia 0.5.0
-  * Type 1+1 <shift+enter> and away you go.
+  * Type 1+1 (shift)+(enter) and away you go.
 2. Some useful Julia ideas:
   * Matrix indices are 1 based: A[1,1] is the upper left entry of A.
   * A = randn(m,n) is a random m x n matrix of standard normals
