@@ -40,9 +40,9 @@ chance to hear some introductory words and also troubleshoot your own computer.
   * A basic if statement to pick the larger of x or y:
   ```
   if x>y
-     y
-  else
      x
+  else
+     y
   end
   ```
   Same thing, in compact ternary format:
