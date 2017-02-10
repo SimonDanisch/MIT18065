@@ -52,7 +52,7 @@ chance to hear some introductory words and also troubleshoot your own computer.
     
       
   * Julia cheatsheets:
-     * https://math.mit.edu/~stevenj/Julia-cheatsheet.pdf  (assumes PyPlot installed)
+     * https://math.mit.edu/~stevenj/Julia-cheatsheet.pdf  (assumes PyPlot installed for the plot portion)
      * https://cheatsheets.quantecon.org/
  
   
