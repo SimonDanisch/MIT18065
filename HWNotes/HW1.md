@@ -32,7 +32,7 @@ chance to hear some introductory words and also troubleshoot your own computer.
      n = length(x) # assume x and b are length n, and M is nxn
      z = copy(b)   # make a copy of b
      for i=1:n, j=1:n
-       z[i] += M[i,j]*x[j]
+       z[i] += M[i,j]*x[j]  # This means take the old value of z[i] and add M[i,j]*x[j]
      end
      z
   end
