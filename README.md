@@ -20,13 +20,13 @@
 Note: Installing class packages  is not required for HW1, but if there are problems, it is best to know early.  The HW1 Julia problem can be executed on [JuliaBox](http://www.juliabox.com) with no installation or on a basic Julia install.  Either way, we recommend jupyter notebooks.
 
 2. If you're on linux, you need to install these packages first `sudo apt-get install cmake xorg-dev libglu1-mesa-dev hdf5-tools`
-2. Type Pkg.init()
+2. Type `Pkg.init()`
   * Ignore pink ugly info or warning messages. They are not serious. 
   * We found that on a mac it ran right away, but on windows it took a couple of minutes. Good time to get that coffee or Diet Coke.
-2. run Pkg.clone("https://github.com/SimonDanisch/MIT18065.git")
+2. run `Pkg.clone("https://github.com/SimonDanisch/MIT18065.git")`
   * This took about 30 minutes on windows, and about 7 on my mac
   * For windows users, good time to get dinner. (Your time may vary.)
-2. run Pkg.test("MIT18065")
+2. run `Pkg.test("MIT18065")`
   * it will open a web browser where you can select getting started.ipynb which will lead you to this:
 [notebook](https://github.com/SimonDanisch/MIT18065/blob/master/docs/getting%20started.ipynb)
 2. execute every step in the notebook (shift + enter  one by one, or cell + Run All)
