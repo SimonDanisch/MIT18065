@@ -17,7 +17,7 @@ chance to hear some introductory words and also troubleshoot your own computer.
   * length(A) is the number of elements in A
   * `A=[ i+j  for i=1:5,j=1:5]`  Creates a 5x5 matrix.  This construction is called a "comprehension".
   * `1:5` is called a range.  It may or may not behave like the vector `[1,2,3,4,5]`, but `[1:5;]` is the vector.
-  * One could have also typed the longer form `[i for i=1:5]`.
+  * One could have also typed the longer form `[i for i=1:5]` for the vector (not the range).
   * A function that computes M*x+b:
   ```
   function myfunction(x,M,b)
