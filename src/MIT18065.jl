@@ -87,6 +87,7 @@ end
 
 export demopath
 
+
 function __init__()
     # make sure Plotly is selected as plotting backend
     plotlyjs()
