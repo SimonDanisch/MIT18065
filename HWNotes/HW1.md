@@ -63,7 +63,7 @@ chance to hear some introductory words and also troubleshoot your own computer.
   and look inside the `conv` function that comes with Julia?
   
   Answer: You can type `@which conv(rand(3),rand(3))` and you can actually see the code 
-  that is used.  Now in this case, what will happen is that you will see fft's (Fast Fourier
+  that is used.  (Open source is great! People who use closed source don't know what they are missing.)  Now in this case, what will happen is that you will see fft's (Fast Fourier
   Transform's) are being used, which is not what the homework asks you to do.  So in this
   case, you may not be helped with the intent of this specific homework assignment at all, 
   but you will now understand the basic operation and perhaps be curious what is the fancy way
