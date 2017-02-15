@@ -68,3 +68,11 @@ chance to hear some introductory words and also troubleshoot your own computer.
   case, you may not be helped with the intent of this specific homework assignment at all, 
   but you will now understand the basic operation and perhaps be curious what is the fancy way
   to get the job done.  
+  
+  If you do click and take a look, you will see a line of code that confirms how big the answer
+  should be in general.  So perhaps looking at the code can help a little.
+  
+  In the real world, there is open source code, wikipedia, textbooks, and real live humans and we encourage you
+  to make great use of all resources, but internalize the answer for yourself in the end.
+  
+  
