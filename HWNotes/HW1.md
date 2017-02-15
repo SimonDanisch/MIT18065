@@ -59,7 +59,7 @@ chance to hear some introductory words and also troubleshoot your own computer.
   
  ##  Really Great Questions from Students:
   
-  1. How can we "cheat" (we do not consider this cheating, we consider it wonderful!),
+  1.  How can we "cheat" (we do not consider this cheating, we consider it wonderful!),
   and look inside the `conv` function that comes with Julia?
   
   Answer: You can type `@which conv(rand(3),rand(3))` and you can actually see the code 
