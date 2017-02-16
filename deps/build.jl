@@ -1,4 +1,8 @@
 # some checks:
+# assert we use condas python
+ENV["PYTHON"] = ""
+Pkg.build("PyCall") # rebuild to enforce the above
+using PyCall, Conda
 
 function ssuccess(command)
     try
@@ -40,8 +44,6 @@ end
 
 
 # install Pymanopt
-
-using PyCall, Conda
 try
     @pyimport pip
 catch e
@@ -54,10 +56,13 @@ catch e
     end
 end
 try
+    using PyCall, Conda
+    Conda.add_channel("conda-forge")
+    Conda.add("numpy")
+    Conda.add("autograd")
     @pyimport pip
-    pip.main(["install", "numpy"])
+    pip.main(["install", "--upgrade", "pip"])
     pip.main(["install", "pymanopt"])
-    pip.main(["install", "autograd"])
 catch e
     println("Automatically installing pymanopt failed. Please install the pymanopt and autograd package manually for your python")
     println("This is the error from the automatic install: $e")
