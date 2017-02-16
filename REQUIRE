@@ -1,33 +1,33 @@
 julia 0.5
 
 # Basics
-Plots 0.10.3
-PlotlyJS 0.5.2
+Plots
+PlotlyJS
 PyCall
 FileIO
 IJulia
 Conda
-Images 0.7.0
-ImageMagick 0.2.1
-Colors 0.7.3
+Images
+ImageMagick
+Colors
 
 # some guis, e.g. photostitching
-GLVisualize v0.2.2
+GLVisualize
 
 
 # Photostitching
-Interpolations 0.3.7
+Interpolations
 
 # audio unmixing
 WAV
 
 # L1 minimization
-Convex 0.4.0 0.4.0+
+Convex
 SCS
 Polynomials
 
 # google maps api
-JSON 0.8.3
+JSON
 
 # Photometric stereo
-IterativeSolvers 0.2.2
+IterativeSolvers
