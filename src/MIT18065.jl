@@ -22,7 +22,33 @@ export RGBA, RGB
 # reexport Interpolations
 export interpolate, BSpline, Linear, OnGrid
 
+"""
+    tsvd(A[, k])
 
+Compute the truncated singular value decomposition of the matrix `A`. The function
+returns `k` singular triplets corresponding to the `k` largest singular values of
+`A`. The default value of `k` is `6`. Depending on the aspect ratio and storage type
+of `A`, the function will try to select the fastest possible algorithm.
+
+# Examples
+```julia
+julia> srand(123);
+
+julia> A = randn(10,5)*randn(5,10);
+
+julia> U, s, V = tsvd(A);
+
+julia> norm(A - U*Diagonal(s)*V', Inf)
+2.0650148258027912e-14
+
+julia> A = sprandn(1000,5,0.01)*sprandn(5,1000,0.01);
+
+julia> U, s, V = tsvd(A);
+
+julia> norm(A - U*Diagonal(s)*V', Inf)
+4.7716462517349e-13
+```
+"""
 function tsvd(A, k = min(min(size(A)...), 6))
     m, n = size(A)
     minmn = min(m, n)
