@@ -49,7 +49,9 @@ chance to hear some introductory words and also troubleshoot your own computer.
   ```
   x>y ? x : y
   ```
-    
+ 
+  `rand(3)[1]` gives the first element of `rand(3)` <br>
+  `rand(3)[2/2]` gives an error because `2/2` is a float not an int. No indexing with floats.
       
   * Julia cheatsheets:
      * https://math.mit.edu/~stevenj/Julia-cheatsheet.pdf  (assumes PyPlot installed for the plot portion)

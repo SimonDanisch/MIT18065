@@ -24,7 +24,7 @@ Interpolations
 WAV
 
 # L1 minimization
-Convex 0.4.0 0.4.0+
+Convex
 SCS
 Polynomials
 
