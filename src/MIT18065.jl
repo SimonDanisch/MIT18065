@@ -1,5 +1,9 @@
 module MIT18065
 
+using Suppressor
+
+@suppress begin
+
 using Images, Colors, Interpolations
 using Polynomials
 using PyCall
@@ -7,9 +11,13 @@ using Interpolations
 using Convex
 using JSON
 using IterativeSolvers
-
+using Interact # for displaying signals of images
+using GLAbstraction, GLVisualize, GLWindow, Reactive, ModernGL, GeometryTypes
+import GLAbstraction: N0f8
 
 using FileIO: @format_str, File, filename, add_format, stream
+
+end
 
 # reexport plotting
 import RecipesBase
@@ -102,6 +110,7 @@ end
 Get the demo path
 """
 demopath(files...) = normpath(joinpath(dirname(@__FILE__), "..", "demos", files...))
+
 export demopath
 
 
