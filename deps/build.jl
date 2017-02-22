@@ -39,7 +39,7 @@ if is_linux()
 end
 
 if is_apple() && Pkg.installed("QuartzImageIO") != nothing
-    warning("""Please remove QuartzImageIO (Pkg.rm("QuartzImageIO")), or you might run into flipped images""")
+    warn("""Please remove QuartzImageIO (Pkg.rm("QuartzImageIO")), or you might run into flipped images""")
 end
 
 
