@@ -12,16 +12,16 @@ using Convex
 using JSON
 using IterativeSolvers
 using Interact # for displaying signals of images
-using GLAbstraction, GLVisualize, GLWindow, Reactive, ModernGL, GeometryTypes
-import GLAbstraction: N0f8
+#using GLAbstraction, GLVisualize, GLWindow, Reactive, ModernGL, GeometryTypes
+#import GLAbstraction: N0f8
+import RecipesBase
+using Plots: plot, scatter, plot!, scatter!, heatmap, heatmap!, @recipe, plotlyjs
 
 using FileIO: @format_str, File, filename, add_format, stream
 
 end
 
 # reexport plotting
-import RecipesBase
-using Plots: plot, scatter, plot!, scatter!, heatmap, heatmap!, @recipe, plotlyjs
 export plot, scatter, plot!, scatter!, heatmap, heatmap!
 
 # reexport Colors
@@ -104,7 +104,6 @@ end
 save(f::File{format"JULIA"}, x) = open(f, "w") do io
     serialize(stream(io), x)
 end
-
 
 """
 Get the demo path
