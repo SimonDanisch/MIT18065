@@ -52,7 +52,7 @@ catch e
         @pyimport pip
     catch e
         # TODO give better instructions... Hopefully no one ever gets here!
-        warning("Please install pip")
+        warn("Error while using pip. $e")
     end
 end
 try
@@ -63,7 +63,16 @@ try
     @pyimport pip
     pip.main(["install", "--upgrade", "pip"])
     pip.main(["install", "pymanopt"])
-catch e
-    println("Automatically installing pymanopt failed. Please install the pymanopt and autograd package manually for your python")
-    println("This is the error from the automatic install: $e")
+catch e1
+    try
+        # pip via pycall seems to have ssl issues on some platforms
+        p = joinpath(dirname(PyCall.python), "pip")
+        run(`$p install pymanopt`)
+    catch e2
+        println("Automatically installing pymanopt failed.")
+        println("Please install the pymanopt and autograd package manually for your python")
+        println("These are the errors from the automatic install:")
+        println(e1)
+        println(e2)
+    end
 end
