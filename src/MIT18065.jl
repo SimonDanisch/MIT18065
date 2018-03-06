@@ -1,9 +1,5 @@
 module MIT18065
 
-using Suppressor
-
-@suppress begin
-
 using Images, Colors, Interpolations
 using Polynomials
 using PyCall
@@ -16,8 +12,6 @@ using GLAbstraction, GLVisualize, GLWindow, Reactive, ModernGL, GeometryTypes
 import GLAbstraction: N0f8
 
 using FileIO: @format_str, File, filename, add_format, stream
-
-end
 
 # reexport plotting
 import RecipesBase
